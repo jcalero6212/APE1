@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12B6943E-3140-4229-A6BB-63C5FA22141A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>APE1</RootNamespace>
+    <AssemblyName>APE1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ejercicio1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio1.Designer.cs">
+      <DependentUpon>Ejercicio1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio2.Designer.cs">
+      <DependentUpon>Ejercicio2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio3.Designer.cs">
+      <DependentUpon>Ejercicio3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio4.Designer.cs">
+      <DependentUpon>Ejercicio4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EjerciciosMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EjerciciosMenu.Designer.cs">
+      <DependentUpon>EjerciciosMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caratula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caratula.Designer.cs">
+      <DependentUpon>Caratula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ejercicio1.resx">
+      <DependentUpon>Ejercicio1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio2.resx">
+      <DependentUpon>Ejercicio2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio3.resx">
+      <DependentUpon>Ejercicio3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio4.resx">
+      <DependentUpon>Ejercicio4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EjerciciosMenu.resx">
+      <DependentUpon>EjerciciosMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caratula.resx">
+      <DependentUpon>Caratula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoUta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UTA_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-uta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siguiente1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1_1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T11.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T22.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T33.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P112.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
